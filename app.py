@@ -3,4 +3,5 @@ import streamlit as st
 
 audio = st.audio_input(label="todo")
 
-st.audio(audio)
+if audio:
+    st.audio(audio.getbytes())
